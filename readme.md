@@ -1,11 +1,8 @@
-Obs: aplicaçao foi feita com banco de dados em docker 
-
-certifiquei-se que a porta do 3306 padrao do MySql esteja fora, caso ja esteje on pode usar o mesmo
+Obs: aplicaçao foi feita com banco de dados MySQL em docker 
 
 Primeiro
-caso ja tenha pule esta etapa
 Para iniciar a aplicção com docker, de um docker compose up na raiz do projeto 
-conect no bando de dados do MySQL pelo worckbanch ou pelo Database do vscode
+conecte no bando de dados do MySQL pelo worckbanch ou pelo Database do vscode
 
 Segundo
 entre na raiz do projeto backend de um npm install
