@@ -1,4 +1,14 @@
 import { Sequelize } from 'sequelize'
-import * as config from '../config/config'
 
-export default new Sequelize(config.default)
+const sequelize = new Sequelize({
+  port: Number(process.env.MYSQL_PORT) ?? 3306,
+  database: process.env.MYSQL_DATABASE ?? 'shopperDB',
+  username: process.env.MYSQL_USER ?? 'root',
+  dialect: 'mysql',
+  dialectOptions: {
+    timezone: 'Z'
+  },
+  logging: false
+})
+
+export default sequelize

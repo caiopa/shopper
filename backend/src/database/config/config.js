@@ -1,9 +1,6 @@
-import dotenv from 'dotenv'
-import { type Options } from 'sequelize'
+require('dotenv').config()
 
-dotenv.config()
-
-const config: Options = {
+module.exports = {
   port: Number(process.env.MYSQL_PORT) ?? 3306,
   database: process.env.MYSQL_DATABASE ?? 'shopperDB',
   username: process.env.MYSQL_USER ?? 'root',
@@ -13,5 +10,3 @@ const config: Options = {
   },
   logging: false
 }
-
-export default config
