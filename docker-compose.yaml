@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_PORT: 3306
+      MYSQL_DATABASE: shopperDB
+      MYSQL_ALLOW_EMPTY_PASSWORD: yes
+    ports:
+      - '3306:3306'
