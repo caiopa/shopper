@@ -4,7 +4,7 @@ import db from '.'
 class Product extends Model {
   public code!: number
   public name!: string
-  public cost_price!: string
+  public cost_price!: number
   public sales_price!: number
 }
 
@@ -30,6 +30,7 @@ Product.init(
   },
   {
     modelName: 'products',
+    underscored: true,
     tableName: 'products',
     timestamps: false,
     sequelize: db
