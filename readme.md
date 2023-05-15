@@ -23,13 +23,10 @@ Realizado com arquitetura Model, Service e Controller(MSC) no Backend
  3. E por ultimo `npm run dev`
 
 <details>
-<summary> 🔰 Funcionabilidade </summary><br />
- 
+<summary> <p>Funcionabilidade<p> </summary><br />
  1. É possivel ver os produtos na pagina inicial vindo do banco de dados
  2. É possivel editar qualquer produto existente no banco de dados (validações com zod)
  3. É possivel registrar um novo produto (validações com zod)
  4. É possivel editar os produtos pelo input se enviado um arquivo correto (2 colunas sendo code e new_price)(Não foi Feito validação)
  Obs: Para conseguir editar pelo arquivo csv o arquivo precisa esta dentro da pasta `shopper/frontend/src/app/file/`
-
-
 </details><br />
