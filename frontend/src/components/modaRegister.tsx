@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form';
 import Button from './Button';
 import { zodResolver } from '@hookform/resolvers/zod'
 import { registerSchema, typeRegisterSchema } from '@/schemasZod';
-import { getProductByCode, registerProduct } from '../services/request'
+import { registerProduct } from '../services/request'
 
 export default function ModalRegister({ onClose }: any) {
   const { register, handleSubmit, formState: { errors } } = useForm<typeRegisterSchema>({
@@ -17,19 +17,14 @@ export default function ModalRegister({ onClose }: any) {
       cost_price: data.costPrice,
       sales_price: data.salesPrice,
     };
-    console.log(data.costPrice); 
-    console.log(data.salesPrice,);
-    
-    console.log(await registerProduct(newProduct))
-    // onClose()
-
+    await registerProduct(newProduct)
+    onClose()
   }
   
  
   const handleCloseClick = (e: React.MouseEvent<HTMLButtonElement | any>) => {
     const target = e.target as HTMLButtonElement;
     const closeByBg = target.classList.contains('bg-gray-500');
-    // Verifica se o clique foi fora do conteúdo do modal
     if (target.value === "Fechar" || closeByBg) {
       onClose();
     }
