@@ -1,7 +1,7 @@
 ## Seja bem vindo ao App Shopper
 
 O projeto foi desenvolvido em Next com Typescript, React e Node com Express e Sequielize
-Realizado com arquitetura Model, Service e Controller(MSC) no Backend
+Projeto realizado realizado com arquitetura Model, Service e Controller(MSC) no Backend
 
 ### Orientações para testar
 
