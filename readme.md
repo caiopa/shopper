@@ -23,7 +23,7 @@ Realizado com arquitetura Model, Service e Controller(MSC) no Backend
  3. E por ultimo `npm run dev`
 
 <details>
-<summary> Funcionabilidades </summary><br/>
+<summary> Funcionalidades </summary><br/>
  
  1. É possivel ver os produtos na pagina inicial vindo do banco de dados
  2. É possivel editar qualquer produto existente no banco de dados (validações com zod)
