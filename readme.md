@@ -5,7 +5,7 @@ Realizado com arquitetura Model, Service e Controller(MSC) no Backend
 
 ### Orientações para testar
 
-!import (Ter o DOCKER e NODE instalados)
+!importante (Ter o DOCKER e NODE instalados)
 
  1. Clone o repositório `git clone git@github.com:caiopa/shopper.git`
  2. Rode o docker compose na raiz do projeto
