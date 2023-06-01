@@ -31,6 +31,5 @@ Projeto realizado realizado com arquitetura Model, Service e Controller(MSC) no 
  4. É possivel editar os produtos pelo input se enviado um arquivo correto (2 colunas sendo code e new_price)(Não foi Feito validação)
  
  Obs1: Para conseguir editar pelo arquivo csv o arquivo precisa está dentro da pasta `shopper/frontend/src/app/file/`
- Obs2: Para verificar se foi editado ou registrado atualize a pagina e verifiquei
  
 </details><br />
